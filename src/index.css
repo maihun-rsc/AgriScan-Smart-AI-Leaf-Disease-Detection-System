@@ -1,0 +1,166 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* Fresh Agricultural Green Palette */
+    --background: 85 25% 95%;
+    --foreground: 140 40% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 40% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 40% 10%;
+
+    /* Primary - Deep Forest Green */
+    --primary: 140 50% 20%;
+    --primary-foreground: 80 60% 95%;
+
+    /* Secondary - Soft Sage */
+    --secondary: 100 25% 90%;
+    --secondary-foreground: 140 40% 15%;
+
+    /* Muted - Light Olive */
+    --muted: 90 20% 92%;
+    --muted-foreground: 100 15% 40%;
+
+    /* Accent - Vibrant Lime */
+    --accent: 85 75% 50%;
+    --accent-foreground: 140 50% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 100 20% 85%;
+    --input: 100 20% 85%;
+    --ring: 140 50% 30%;
+
+    --radius: 1rem;
+
+    /* Custom tokens for the app */
+    --gradient-primary: linear-gradient(135deg, hsl(140 50% 20%), hsl(160 45% 25%));
+    --gradient-accent: linear-gradient(135deg, hsl(85 75% 50%), hsl(100 70% 45%));
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%), hsl(85 25% 97%));
+    --gradient-hero: linear-gradient(180deg, hsl(140 50% 18%), hsl(150 45% 22%));
+    
+    --shadow-soft: 0 4px 20px -4px hsl(140 40% 20% / 0.15);
+    --shadow-glow: 0 0 30px hsl(85 75% 50% / 0.3);
+    --shadow-card: 0 8px 30px -12px hsl(140 40% 20% / 0.2);
+
+    /* Status colors */
+    --healthy: 140 70% 40%;
+    --warning: 45 90% 50%;
+    --danger: 0 75% 55%;
+
+    --sidebar-background: 140 50% 15%;
+    --sidebar-foreground: 80 60% 95%;
+    --sidebar-primary: 85 75% 50%;
+    --sidebar-primary-foreground: 140 50% 10%;
+    --sidebar-accent: 140 40% 25%;
+    --sidebar-accent-foreground: 80 60% 95%;
+    --sidebar-border: 140 30% 25%;
+    --sidebar-ring: 85 75% 50%;
+  }
+
+  .dark {
+    --background: 140 50% 8%;
+    --foreground: 80 60% 95%;
+
+    --card: 140 45% 12%;
+    --card-foreground: 80 60% 95%;
+
+    --popover: 140 45% 12%;
+    --popover-foreground: 80 60% 95%;
+
+    --primary: 85 75% 50%;
+    --primary-foreground: 140 50% 10%;
+
+    --secondary: 140 35% 18%;
+    --secondary-foreground: 80 60% 95%;
+
+    --muted: 140 30% 15%;
+    --muted-foreground: 100 15% 60%;
+
+    --accent: 85 75% 50%;
+    --accent-foreground: 140 50% 10%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 30% 20%;
+    --input: 140 30% 20%;
+    --ring: 85 75% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50 shadow-[var(--shadow-card)];
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-scan {
+    animation: scan 1.5s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(85 75% 50% / 0.3); }
+    50% { box-shadow: 0 0 40px hsl(85 75% 50% / 0.6); }
+  }
+
+  @keyframes scan {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(100%); opacity: 0.5; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+}

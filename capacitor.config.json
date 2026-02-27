@@ -1,0 +1,14 @@
+{
+  "appId": "app.lovable.acf95546e438465581cb68e068184fbb",
+  "appName": "PlantGuard AI",
+  "webDir": "dist",
+  "server": {
+    "url": "https://acf95546-e438-4655-81cb-68e068184fbb.lovableproject.com?forceHideBadge=true",
+    "cleartext": true
+  },
+  "plugins": {
+    "Camera": {
+      "presentationStyle": "popover"
+    }
+  }
+}
