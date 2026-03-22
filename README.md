@@ -155,6 +155,15 @@ AgriScan/
 ---
 
 ## Application Screenshots
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/a8ffeb5e-0f1c-4dcd-b860-92ada16669ae" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/b42d5745-010c-4075-acb8-2680d6361ad5" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/3fa52755-5f86-4f97-8fb7-609ada581328" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/8f1c27fb-2c4b-4e7e-9499-376aee34021a" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/4e1947b4-5e0f-4002-b28f-207189b139c5" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/3945444d-3e4f-4f87-9aeb-606e759253b6" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/a51dd733-4c00-45b7-875d-df30cde49122" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/849ddd86-79ea-49d6-ac0a-c3f7bb138c39" />
+<img width="624" height="1387" alt="image" src="https://github.com/user-attachments/assets/85496565-b5a7-43be-845e-58176457b750" />
 
 Screenshots are available in the `screenshots/` directory of the repository.
 
