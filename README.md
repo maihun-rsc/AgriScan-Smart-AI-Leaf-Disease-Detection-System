@@ -392,4 +392,3 @@ The architecture is scalable, extensible, and suitable for integration with futu
 
 This project is currently released for **academic and educational use**.  
 Licensing terms can be updated based on institutional or organizational requirements.
->>>>>>> cda16ae256777aa1740bed69c73c153f4668c5af
